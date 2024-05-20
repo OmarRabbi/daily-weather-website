@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Weather</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Daily Weather</h2>
+            <div class="header-input">
+                <input type="text" name="city" class="weather-input" id="cityInput" placeholder="Enter city name">
+                <button type="button" class="weather-input" id="searchBtn"><i class="fa-regular fa-search"></i>Search</button>
+                <button type="button" class="weather-input" id="locationBtn"><i class="bx bx-target-lock"></i>Current location</button>
+            </div>
+        </div>
+        <div class="weather-data">
+            <div class="weather-left">
+                <div class="card">
+                    <h2>Now</h2>
+                    <div class="current-weather"> 
+                            <div class="weather-icon" id="currentWeatherIcon">
+                                <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="weather-icon">
+                            </div>
+                        <div class="details">
+                            <div>
+                                <h2 id="currentTemp">___&deg;C</h2>
+                            </div>
+                            <div class="col">
+                                <i><span class="fa-solid fa-droplet"></span></i>
+                                <div>
+                                    <h5 id="currentHumidity">__%</h5>
+                                    <p>Humadity</p>
+                                </div>
+                            </div>
+                            <div id="currentCondition">_____</div>
+                            <div class="col">
+                                <i><span class="fa-solid fa-wind"></span></i>
+                                <div>
+                                    <h5 id="currentWind"> km/h</h5>
+                                    <p>Wind speed</p>
+                                </div>
+                            </div>
+                        </div>
+                    <hr>
+                    <div class="current-weather-footer">
+                        <p><i class="fa-light fa-calendar"></i> <span id="currentDate">_____</span></p>
+                        <p><i class="fa-light fa-location-dot"></i> <span id="currentCity">_____</span></p>
+                    </div>
+                </div></div>
+            </div>
+            <div class="weather-right">
+                <div class="card">
+                    <h2>Today's Weather</h2>
+                    <div class="hourly-weather" id="hourlyWeather">
+                        <div class="card">
+                            <p>9 AM</p>
+                            <img class="weather-icon" src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="">
+                            <p>____&deg;C</p>
+                        </div>
+                        <div class="card">
+                            <p>9 AM</p>
+                            <img class="weather-icon" src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="">
+                            <p>____&deg;C</p>
+                        </div>
+                        <div class="card">
+                            <p>9 AM</p>
+                            <img class="weather-icon" src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="">
+                            <p>____&deg;C</p>
+                        </div>
+                        <div class="card">
+                            <p>9 AM</p>
+                            <img class="weather-icon" src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="">
+                            <p>____&deg;C</p>
+                        </div>
+                        <div class="card">
+                            <p>9 AM</p>
+                            <img class="weather-icon" src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="">
+                            <p>____&deg;C</p>
+                        </div>
+                        <div class="card">
+                            <p>9 AM</p>
+                            <img class="weather-icon" src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="">
+                            <p>____&deg;C</p>
+                        </div>
+                        <div class="card">
+                            <p>9 AM</p>
+                            <img class="weather-icon" src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="">
+                            <p>____&deg;C</p>
+                        </div>
+                        <div class="card">
+                            <p>9 AM</p>
+                            <img class="weather-icon" src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="">
+                            <p>____&deg;C</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-bottom">
+                <div class="card">
+                    <h2>Upcoming week forecast</h2>
+                    <div class="next-week-weather" id="weeklyWeather"> 
+                        <div class="card">
+                            <div class="day">Tue</div>
+                            <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" class="weather-icon">
+                            <div class="temp">Day - 35.6&deg; C</div>
+                            <div class="temp">Night - 25.6&deg; C</div>
+                        </div>
+                        <div class="card">
+                            <div class="day">Tue</div>
+                            <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" class="weather-icon">
+                            <div class="temp">Day - 35.6&deg; C</div>
+                            <div class="temp">Night - 25.6&deg; C</div>
+                        </div>
+                        <div class="card">
+                            <div class="day">Tue</div>
+                            <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" class="weather-icon">
+                            <div class="temp">Day - 35.6&deg; C</div>
+                            <div class="temp">Night - 25.6&deg; C</div>
+                        </div>
+                        <div class="card">
+                            <div class="day">Tue</div>
+                            <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" class="weather-icon">
+                            <div class="temp">Day - 35.6&deg; C</div>
+                            <div class="temp">Night - 25.6&deg; C</div>
+                        </div>
+                        <div class="card">
+                            <div class="day">Tue</div>
+                            <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" class="weather-icon">
+                            <div class="temp">Day - 35.6&deg; C</div>
+                            <div class="temp">Night - 25.6&deg; C</div>
+                        </div>
+                        <div class="card">
+                            <div class="day">Tue</div>
+                            <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" class="weather-icon">
+                            <div class="temp">Day - 35.6&deg; C</div>
+                            <div class="temp">Night - 25.6&deg; C</div>
+                        </div>
+                        <div class="card">
+                            <div class="day">Tue</div>
+                            <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" class="weather-icon">
+                            <div class="temp">Day - 35.6&deg; C</div>
+                            <div class="temp">Night - 25.6&deg; C</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Powered by <a href="https://www.weatherapi.com/" target="_blank" rel="noopener noreferrer">WeatherAPI.com</a></p>
+        </footer>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
