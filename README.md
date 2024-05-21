@@ -43,5 +43,4 @@ The application includes error handling for:
     * Geolocation errors (when the user denies location access).
 
 ## Live Demo
-Demo link - 
-# daily-weather-website
+Demo link - https://omarrabbi.github.io/daily-weather-website/
