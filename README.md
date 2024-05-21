@@ -39,8 +39,9 @@ script.js: The JavaScript file containing the logic for fetching and displaying 
 
 ## Error Handling
 The application includes error handling for:
-    * Failed API requests (e.g., invalid city names or network issues).
-    * Geolocation errors (e.g., when the user denies location access).
+    * Failed API requests (invalid city names or network issues).
+    * Geolocation errors (when the user denies location access).
 
 ## Live Demo
-Demo link - # daily-weather
+Demo link - 
+# daily-weather-website
