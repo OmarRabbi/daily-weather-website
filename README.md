@@ -43,4 +43,4 @@ The application includes error handling for:
     * Geolocation errors (e.g., when the user denies location access).
 
 ## Live Demo
-Demo link - 
+Demo link - # daily-weather
